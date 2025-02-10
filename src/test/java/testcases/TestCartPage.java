@@ -65,7 +65,7 @@ public class TestCartPage extends DriverSetup {
                 "Cart count incorrect after removing one product");
 
         // Remove second product
-        productPage.removeProduct(1);
+        productPage.removeProduct(0);
         Assert.assertEquals(productPage.getCartCount(), 0,
                 "Cart should be empty after removing all products");
     }

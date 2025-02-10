@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import java.util.List;
 import java.util.ArrayList;
-import io.qameta.allure.Allure;
 import org.openqa.selenium.WebElement;
 
 import static utilities.DriverSetup.getDriver;
@@ -82,9 +81,3 @@ public class ProductPage extends BasePage{
         clickOnElement(logoutLink);
     }
 }
-
-
-
-
-
-
