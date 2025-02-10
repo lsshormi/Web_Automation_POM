@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/shormi/Documents/Code/Java/Automation_POM">
+        <classes>
+            <class name="testcases.TestCartPage">
+                <methods>
+                    <include name="testAddSingleProductToCart"/>
+                    <include name="testAddMultipleProductsToCart"/>
+                    <include name="testRemoveProductsFromCart"/>
+                    <include name="testCartBadgeUpdates"/>
+                    <include name="testCartPersistenceAfterRefresh"/>
+                    <include name="testProceedToCheckout"/>
+                </methods>
+            </class>
+            <class name="testcases.TestCheckoutPage">
+                <methods>
+                    <include name="testCheckoutProcess"/>
+                </methods>
+            </class>
+            <class name="testcases.TestEndToEndFlow">
+                <methods>
+                    <include name="testEndToEndOrderFlow"/>
+                </methods>
+            </class>
+            <class name="testcases.TestLoginPage">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                    <include name="testLockedOutUser"/>
+                </methods>
+            </class>
+            <class name="testcases.TestLogoutFunctionality">
+                <methods>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+            <class name="testcases.TestProductPage">
+                <methods>
+                    <include name="testProductSortingByNameAscending"/>
+                    <include name="testProductSortingByNameDescending"/>
+                    <include name="testProductSortingByPriceLowToHigh"/>
+                    <include name="testProductSortingByPriceHighToLow"/>
+                    <include name="testCartBadgeCount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
